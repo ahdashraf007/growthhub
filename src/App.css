@@ -1,0 +1,47 @@
+.marquee{
+    animation: marquee 25s linear 0s infinite normal none; 
+}
+
+@keyframes marquee{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: blue;
+  cursor: pointer;
+}
+
+
+.testimonials-swiper {
+    padding: 20px 0;
+}
+
+.testimonials-swiper .swiper-slide {
+    height: auto;
+}
+
+
+.testimonials-swiper .swiper-slide-next::after,
+.testimonials-swiper .swiper-slide-prev::after {
+    display: none;
+}
+
+.swiper-slide-next, .swiper-slide-prev {
+    display: none;
+}
+
+.swiper-button-next-custom.swiper-button-disabled,
+.swiper-button-prev-custom.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
